@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Anne-Charlotte Rivalland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fond étoilé -->
+  <div class="stars-bg">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">Portfolio</span>
+      <div class="nav-links">
+        <button class="nav-btn active" data-target="accueil">Accueil</button>
+        <button class="nav-btn" data-target="parcours">Parcours</button>
+        <button class="nav-btn" data-target="bts">BTS SIO SLAM</button>
+        <button class="nav-btn" data-target="situations">Situations Professionnelles</button>
+        <button class="nav-btn" data-target="veille">Veille Technologique</button>
+        <button class="nav-btn" data-target="synthese">Tableau de Synthèse</button>
+        <button class="nav-btn" data-target="projets">Projets Futurs</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="nav-btn" data-target="accueil">Accueil</button>
+    <button class="nav-btn" data-target="parcours">Parcours</button>
+    <button class="nav-btn" data-target="bts">BTS SIO SLAM</button>
+    <button class="nav-btn" data-target="situations">Situations Pro</button>
+    <button class="nav-btn" data-target="veille">Veille</button>
+    <button class="nav-btn" data-target="synthese">Tableau de Synthèse</button>
+    <button class="nav-btn" data-target="projets">Projets Futurs</button>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════════
+         1. ACCUEIL
+    ══════════════════════════════════════════ -->
+    <section id="accueil" class="page active">
+      <div class="hero-wrapper">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Portfolio · BTS SIO SLAM</p>
+          <h1 class="hero-name">Anne-Charlotte<br><em>Rivalland</em></h1>
+          <p class="hero-sub">Étudiante en développement logiciel passionnée par la création d'applications et les nouvelles technologies.</p>
+          <div class="hero-chips">
+            <span class="chip">Développement Web</span>
+            <span class="chip">PHP</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Java</span>
+            <span class="chip">C#</span>
+          </div>
+          <div class="hero-cta">
+            <button class="btn-primary" data-target="parcours">Découvrir mon parcours</button>
+            <a href="https://www.linkedin.com/in/anne-charlotte-r-89b44b408/" target="_blank" class="btn-ghost">LinkedIn →</a>
+          </div>
+        </div>
+        <div class="hero-photo-block">
+            <img src="images/accueilStyle.jpg" alt="IDE Code" class="hero-photo" title="Cliquer pour agrandir">
+          <div class="hero-deco-ring"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         2. PARCOURS
+    ══════════════════════════════════════════ -->
+    <section id="parcours" class="page">
+      <div class="page-container">
+        <header class="page-header">
+          <h2>Parcours de <em>professionnalisation</em></h2>
+          <p class="page-lead">De la recherche de stage à la construction de mon identité professionnelle.</p>
+        </header>
+
+        <!-- Timeline -->
+        <div class="timeline-grid">
+
+          <div class="timeline-item">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-card glass-card">
+              <span class="tl-tag">Diplômes</span>
+              <h3>Formation académique</h3>
+              <p> — Baccalauréat obtenu en 2023 — <strong> Spécialités LLCER & Sciences Économiques et Sociales</strong> avec le CNED.</p>
+              <div class="img-placeholder small"><img src="images/diplomeBac.jpg" alt="Diplôme Baccalauréat"></div>
+              <p> — Certification <strong>PIX</strong> obtenue en 2026.</p>
+              <div class="img-placeholder small"><img src="images/certificationPix.jpg" alt="Certification Pix"></div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-card glass-card">
+              <span class="tl-tag">Formation complémentaire</span>
+              <h3>Formation en autonomie</h3>
+              <p>Utilisation de la plateforme OpenClassrooms pour approfondir mes compétences en dehors des cours du CNED. Apprentissage autonome en complément de la formation BTS SIO.</p>
+              <div class="img-placeholder small"><img src="images/OPClassroom.png" alt="Open Classrooms cours terminés"></div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-card glass-card">
+              <span class="tl-tag">LinkedIn</span>
+              <h3>Création du profil LinkedIn</h3>
+              <p>Optimisation de mon profil LinkedIn pour me rendre visible auprès des recruteurs.</p>
+              <a href="https://www.linkedin.com/in/anne-charlotte-r-89b44b408/" target="_blank" class="inline-link">Voir mon profil LinkedIn →</a>
+              <div class="img-placeholder small"><img src="images/LinkedinImage.png" alt="Profil Linkedin"></div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-card glass-card">
+              <span class="tl-tag">CV & Candidature</span>
+              <h3>Création du CV</h3>
+              <p>Rédaction d'un CV adapté aux offres de stage en informatique. Mise en valeur des compétences et des projets en cours.</p>
+              <div class="img-placeholder small"><img src="images/CViMAGE.jpg" alt="CV Anne-Charlotte"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         3. BTS SIO SLAM
+    ══════════════════════════════════════════ -->
+    <section id="bts" class="page">
+      <div class="page-container">
+        <header class="page-header">
+          <h2>BTS SIO <em>SLAM</em></h2>
+          <p class="page-lead">Compétences acquises lors de la formation.</p>
+        </header>
+
+        <div class="year-tabs">
+          <button class="year-tab active" data-year="1">1ère année</button>
+          <button class="year-tab" data-year="2">2ème année</button>
+        </div>
+
+        <!-- Année 1 -->
+        <div class="year-content active" id="year-1">
+          <div class="skills-grid">
+            <div class="skill-card glass-card">
+              <div class="skill-icon">🖳</div>
+              <h4>Développement Web</h4>
+              <p>HTML, CSS, JavaScript — initiation au développement front-end, création de pages statiques et dynamiques.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill-card glass-card">
+              <div class="skill-icon">𓆙</div>
+              <h4>Python</h4>
+              <p>Entrainement en algorithmique avec le language, découverte des bases du développement, scripts d'automatisation sur PyCharm.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+            </div>
+            <div class="skill-card glass-card">
+              <div class="skill-icon">🖥</div>
+              <h4>Bases de données</h4>
+              <p>SQL requêtes basiques, jointures, MySQL, SQL Server, compréhension de leur emplacement / fonctionnement.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+            </div>
+            <div class="skill-card glass-card">
+              <div class="skill-icon">@</div>
+              <h4>Réseaux & Infrastructure</h4>
+              <p>Notions de virtualisation sur Oracle Virtual Box, protocoles TCP/IP, configuration réseau de base.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
+            </div>
+            <div class="skill-card glass-card">
+              <div class="skill-icon">ꗃ</div>
+              <h4>Cybersécurité</h4>
+              <p>Sensibilisation aux menaces, bonnes pratiques, politique de mots de passe, RGPD.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:45%"></div></div>
+            </div>
+            <div class="skill-card glass-card">
+              <div class="skill-icon">🗒</div>
+              <h4>Gestion de projet</h4>
+              <p>Interprétation et rédaction de cahiers des charges, diagrammes de cas d'utilisation, d'activités etc..</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Année 2 -->
+        <div class="year-content" id="year-2">
+          <div class="skills-grid">
+            <div class="skill-card glass-card">
+              <div class="skill-icon">☕︎</div>
+              <h4>Java / POO avancée</h4>
+              <p>Programmation orientée objet avancée, design patterns, développement d'un mini jeu vidéo.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+            </div>
+            <div class="skill-card glass-card">
+              <div class="skill-icon">𓃰</div>
+              <h4>PHP & Symfony</h4>
+              <p>Développement back-end, création d'applications web dynamiques, framework MVC.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill-card glass-card">
+              <div class="skill-icon">✆</div>
+              <h4>Développement mobile</h4>
+              <p>Initiation au développement d'applications mobiles — Utilisation d'Android Studio.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
+            </div>
+            <div class="skill-card glass-card">
+              <div class="skill-icon">⚙︎</div>
+              <h4>Tests & Débogage</h4>
+              <p>Utilisation d'outils de débogage, recherche d'erreurs, tests de fonctionnalités et validation du bon fonctionnement des applications.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+            </div>
+            <div class="skill-card glass-card">
+              <div class="skill-icon">ฅ</div>
+              <h4>Git & Versioning</h4>
+              <p>Gestion de versions avec Git, travail collaboratif sur GitHub, branches, Push / Pull / Merge.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+            </div>
+            <div class="skill-card glass-card">
+              <div class="skill-icon">🗍</div>
+              <h4>Veille technologique</h4>
+              <p>Recherche de nouvelles technologies, découverte d'outils et suivi des évolutions du développement informatique.</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:40%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         4. SITUATIONS PROFESSIONNELLES
+    ══════════════════════════════════════════ -->
+    <section id="situations" class="page">
+      <div class="page-container">
+        <header class="page-header">
+          <h2>Situations <em>Professionnelles</em></h2>
+          <p class="page-lead">Stages et situations professionnelles réalisés dans le cadre du BTS SIO.</p>
+        </header>
+
+        <div class="situations-grid">
+
+          <!-- Stage 1 -->
+          <div class="situ-card glass-card" id="situ-stage1">
+            <div class="situ-header">
+              <span class="situ-number">01</span>
+              <div>
+                <h3>Stage de 1e année</h3>
+                <p class="situ-meta"> Tenexa · Roissy-en-France · Juin / Juillet 2025</p>
+              </div>
+            </div>
+            <p class="situ-desc"> ✴︎ &nbsp Développement sur une base de tests, programmation dans l'IDE VS Code, utilisation de Tortoise SVN comme dépot distant, utilisation du site 'EasyDesk' pour la gestion des tickets et le travail en équipe.</p>
+            <div class="situ-missions">
+              <p class="situ-missions-title">Missions réalisées :</p>
+              <ul>
+                <li> &nbsp Développement Web en PHP, HTML, CSS, JS</li>
+                <li> &nbsp Refonte de l'intranet selon la nouvelle charte graphique</li>
+                <li> &nbsp Réalisation de tests fonctionnels et remontée d'anomalies</li>
+              </ul>
+            </div>
+            <div class="situ-screenshots">
+              <div class="img-placeholder small"><img src="images/diagrammeUpdateCommit.png" alt="Proportion de commits récents" title="Cliquer pour agrandir"></div>
+              <div class="img-placeholder small"><img src="images/imageCommitCreationPage.png" alt="Exemple de commit" title="Cliquer pour agrandir"></div>
+            </div>
+            <button class="expand-btn" onclick="toggleExpand('detail-stage1')">Voir plus de captures d'écran ↓</button>
+            <div class="expand-content" id="detail-stage1">
+              <div class="sp-item">
+                <p> ★ Exemple de commit : création d'une page listant les responsables de l'entreprise pour l'Intranet, accessible uniquement à certains rôles.</p>
+                <div class="img-placeholder small"><img src="images/screenCommitCreationPage.png" alt="Exemple création d'une page" title="Cliquer pour agrandir"></div>
+              </div>
+              <div class="sp-item">
+                <p>★ Exemple de ticket qu'on m'a confié à traiter (création de la page).</p>
+                <div class="img-placeholder small"><img src="images/screenExempleTicket.png" alt="Exemple ticket à traiter" title="Cliquer pour agrandir"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="situ-card glass-card" id="situ-stage2">
+            <div class="situ-header">
+              <span class="situ-number">02</span>
+              <div>
+                <h3>Stage de 2e année</h3>
+                <p class="situ-meta"> Tenexa · Roissy-en-France · Février / Avril 2026</p>
+              </div>
+            </div>
+            <p class="situ-desc"> ✴︎ &nbsp Découverte d'un outil de sécurité : AppScan, utilisé pour trouver les failles de sécurité présentes dans le code.</p>
+            <div class="situ-missions">
+              <p class="situ-missions-title">Missions réalisées :</p>
+              <ul>
+                <li> &nbsp Correction de bugs</li>
+                <li> &nbsp Traitement de tickets</li>
+                <li> &nbsp Sécurisation du code</li>
+              </ul>
+            </div>
+            <div class="situ-screenshots">
+              <div class="img-placeholder small"><img src="images/reqPreparees.png" alt="Sécurisation du code" title="Cliquer pour agrandir"></div>
+              <div class="img-placeholder small"><img src="images/nexflow.png" alt="Exemple de ticket" title="Cliquer pour agrandir"></div>
+            </div>
+            <button class="expand-btn" onclick="toggleExpand('detail-stage2')">Voir plus de captures d'écran ↓</button>
+            <div class="expand-content" id="detail-stage2">
+              <div class="sp-item">
+                <p>★ Site pour garder des traces des pages modifiées / numéros de chaque commit et modifications.</p>
+                <div class="img-placeholder small"><img src="images/exempleNexflow.png" alt="Exemple gestion des commits" title="Cliquer pour agrandir"></div>
+              </div>
+              <div class="sp-item">
+                <p>★ Exemple d'ajout d'une condition dans le code afin de vérifier que les deux champs obligatoires ont été cochés.</p>
+                <div class="img-placeholder small"><img src="images/image001.png" alt="Exemple condition dans le code" title="Cliquer pour agrandir"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Situation pro autonome 1 (CNED) -->
+          <div class="situ-card glass-card situ-small">
+            <div class="situ-header">
+              <span class="situ-number">03</span>
+              <div>
+                <h3>Situation pro CNED n°1</h3>
+                <p class="situ-meta">Formation à distance</p>
+              </div>
+            </div>
+            <p class="situ-desc"> A COMPLETER</p>
+            <div class="img-placeholder small" style="margin-top:12px;">📸 Document / capture</div>
+            <a href="#" class="situ-link">Accéder au document →</a>
+          </div>
+
+          <!-- Situation pro autonome 2 (CNED) -->
+          <div class="situ-card glass-card situ-small">
+            <div class="situ-header">
+              <span class="situ-number">04</span>
+              <div>
+                <h3>Situation pro CNED n°2</h3>
+                <p class="situ-meta">Formation à distance</p>
+              </div>
+            </div>
+            <p class="situ-desc">A COMPLETER </p>
+            <div class="img-placeholder small" style="margin-top:12px;">📸 Document / capture</div>
+            <a href="#" class="situ-link">Accéder au document →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         5. VEILLE TECHNOLOGIQUE
+    ══════════════════════════════════════════ -->
+    <section id="veille" class="page">
+      <div class="page-container">
+        <header class="page-header">
+          <h2>Veille <em>Technologique</em></h2>
+          <p class="page-lead">Thème choisi : <strong>à remplir</strong></p>
+        </header>
+
+        <div class="glass-card veille-intro">
+          <h3>Qu'est-ce que la veille technologique ?</h3>
+          <p>La veille technologique consiste à surveiller de façon continue les évolutions, innovations et tendances du secteur informatique. Elle permet d'anticiper les changements, d'adapter ses compétences et de rester compétitif sur le marché du travail.</p>
+        </div>
+
+        <div class="veille-layout">
+          <!-- Présentation du thème -->
+          <div class="glass-card veille-theme">
+            <span class="tl-tag">Mon thème</span>
+            <h3> Titre du thème</h3>
+            <p> Pourquoi ce thème, ce qu'il représente pour le secteur informatique aujourd'hui..</p>
+            <p style="margin-top:12px;"> Céfinition du sujet, enjeux, évolutions récentes…</p>
+            <div class="img-placeholder" style="margin-top:16px;"> Illustration +</div>
+          </div>
+
+          <!-- Sources -->
+          <div class="glass-card veille-sources">
+            <span class="tl-tag">Mes sources</span>
+            <h3>Sources utilisées</h3>
+            <div class="source-list">
+              <div class="source-item">
+                <div class="source-dot blue"></div>
+                <div>
+                  <p class="source-name">source 1</p>
+                  <p class="source-type">Site web / Blog technique / Newsletter</p>
+                  <a href="#" class="source-link">Visiter →</a>
+                </div>
+              </div>
+              <div class="source-item">
+                <div class="source-dot purple"></div>
+                <div>
+                  <p class="source-name"> source 2</p>
+                  <p class="source-type">Podcast / Chaîne YouTube / Revue</p>
+                  <a href="#" class="source-link">Visiter →</a>
+                </div>
+              </div>
+              <div class="source-item">
+                <div class="source-dot teal"></div>
+                <div>
+                  <p class="source-name">source 3</p>
+                  <p class="source-type">Réseaux sociaux / Fil Twitter / LinkedIn</p>
+                  <a href="#" class="source-link">Visiter →</a>
+                </div>
+              </div>
+              <div class="source-item">
+                <div class="source-dot amber"></div>
+                <div>
+                  <p class="source-name"> source 4</p>
+                  <p class="source-type">source</p>
+                  <a href="#" class="source-link">Visiter →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Articles / actualités suivies -->
+        <div class="glass-card" style="margin-top:24px;">
+          <span class="tl-tag">Actualités suivies</span>
+          <h3>Ce que j'ai retenu</h3>
+          <div class="actu-grid">
+            <div class="actu-item">
+              <span class="actu-date">✏️ Date</span>
+              <h4>✏️ Titre de l'article / actualité</h4>
+              <p>✏️ Résumé en quelques lignes de ce que tu as appris ou retenu.</p>
+            </div>
+            <div class="actu-item">
+              <span class="actu-date">✏️ Date</span>
+              <h4>✏️ Titre de l'article / actualité</h4>
+              <p>✏️ Résumé.</p>
+            </div>
+            <div class="actu-item">
+              <span class="actu-date">✏️ Date</span>
+              <h4>✏️ Titre de l'article / actualité</h4>
+              <p>✏️ Résumé.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         6. TABLEAU DE SYNTHÈSE
+    ══════════════════════════════════════════ -->
+    <section id="synthese" class="page">
+      <div class="page-container">
+        <header class="page-header">
+          <h2>Tableau de <em>Synthèse</em></h2>
+          <p class="page-lead">Récapitulatif des compétences et activités réalisées en BTS SIO SLAM.</p>
+        </header>
+
+        <div class="glass-card synthese-info">
+          <p>Ce tableau recense les compétences du référentiel BTS SIO SLAM mises en œuvre lors des stages et des projets. <strong>✏️ Complète les colonnes "Réalisé lors de" avec tes propres expériences.</strong></p>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="synthese-table">
+            <thead>
+              <tr>
+                <th>Bloc</th>
+                <th>Compétence</th>
+                <th>Réalisé lors de</th>
+                <th>Statut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bloc-row"><td colspan="4">Bloc 1 — Support et mise à disposition de services informatiques</td></tr>
+              <tr>
+                <td>B1.1</td>
+                <td>Gérer le patrimoine informatique</td>
+                <td>✏️ Stage 1 / Projet scolaire</td>
+                <td><span class="badge badge-ok">✓ Réalisé</span></td>
+              </tr>
+              <tr>
+                <td>B1.2</td>
+                <td>Répondre aux incidents et aux demandes</td>
+                <td>✏️ À compléter</td>
+                <td><span class="badge badge-wip">En cours</span></td>
+              </tr>
+              <tr>
+                <td>B1.3</td>
+                <td>Développer la présence en ligne</td>
+                <td>✏️ À compléter</td>
+                <td><span class="badge badge-ok">✓ Réalisé</span></td>
+              </tr>
+              <tr>
+                <td>B1.4</td>
+                <td>Travailler en mode projet</td>
+                <td>✏️ À compléter</td>
+                <td><span class="badge badge-ok">✓ Réalisé</span></td>
+              </tr>
+              <tr>
+                <td>B1.5</td>
+                <td>Mettre à disposition des utilisateurs un service informatique</td>
+                <td>✏️ À compléter</td>
+                <td><span class="badge badge-wip">En cours</span></td>
+              </tr>
+              <tr>
+                <td>B1.6</td>
+                <td>Organiser son développement professionnel</td>
+                <td>✏️ Portfolio, veille, LinkedIn</td>
+                <td><span class="badge badge-ok">✓ Réalisé</span></td>
+              </tr>
+
+              <tr class="bloc-row"><td colspan="4">Bloc 2 — Conception et développement d'applications</td></tr>
+              <tr>
+                <td>B2.1</td>
+                <td>Concevoir et développer une solution applicative</td>
+                <td>✏️ À compléter</td>
+                <td><span class="badge badge-ok">✓ Réalisé</span></td>
+              </tr>
+              <tr>
+                <td>B2.2</td>
+                <td>Assurer la maintenance corrective ou évolutive</td>
+                <td>✏️ À compléter</td>
+                <td><span class="badge badge-wip">En cours</span></td>
+              </tr>
+              <tr>
+                <td>B2.3</td>
+                <td>Gérer les données</td>
+                <td>✏️ À compléter</td>
+                <td><span class="badge badge-ok">✓ Réalisé</span></td>
+              </tr>
+
+              <tr class="bloc-row"><td colspan="4">Bloc 3 — Cybersécurité des services informatiques</td></tr>
+              <tr>
+                <td>B3.1</td>
+                <td>Protéger les données à caractère personnel</td>
+                <td>✏️ À compléter</td>
+                <td><span class="badge badge-wip">En cours</span></td>
+              </tr>
+              <tr>
+                <td>B3.2</td>
+                <td>Préserver l'identité numérique</td>
+                <td>✏️ À compléter</td>
+                <td><span class="badge badge-wip">En cours</span></td>
+              </tr>
+              <tr>
+                <td>B3.3</td>
+                <td>Sécuriser les équipements et les usages</td>
+                <td>✏️ À compléter</td>
+                <td><span class="badge badge-ok">✓ Réalisé</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="img-placeholder" style="margin-top:24px;">Version PDF du tableau de synthèse</div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         7. PROJETS FUTURS
+    ══════════════════════════════════════════ -->
+    <section id="projets" class="page">
+      <div class="page-container">
+        <header class="page-header">
+          <h2>Projets <em>Futurs</em></h2>
+          <p class="page-lead">Après le BTS SIO — ce qui m'attend et ce vers quoi je me dirige.</p>
+        </header>
+
+        <!-- École 42 — carte principale -->
+        <div class="glass-card ecole42-card">
+          <div class="ecole42-header">
+            <div class="ecole42-logo">42</div>
+            <div>
+              <span class="tl-tag">Poursuite d'études</span>
+              <h3>École 42 — Paris</h3>
+            </div>
+          </div>
+          <div class="ecole42-body">
+            <div class="ecole42-text">
+              <h4>Comment j'ai découvert l'École 42</h4>
+              <p> ✧ Grâce à un ami de mon grand-frère qui a lui même poursuivi ses études avec 42 après avoir fait un BTS SIO. Il est désormais développeur fullstack en entreprise, ce que j'ai pour ambition de faire plus tard. </p>
+
+              <h4 style="margin-top:20px;">Ce qui m'attire chez cette école</h4>
+              <p> ✧ La pédagogie par la pratique, la réputation dans l'industrie tech, l'intensité du cursus, les débouchés qu'elle propose, son côté ouvert à tous.</p>
+
+              <h4 style="margin-top:20px;">La Piscine — L'épreuve d'entrée</h4>
+              <p> ✧ Le processus de sélection de l'École 42 passe par <strong>la Piscine</strong>, une période intensive d'un mois où les candidats apprennent à coder en C et en Shell.</p>
+
+              <h4 style="margin-top:20px;">Ma préparation afin de réussir mon entrée à 42</h4>
+              <p> ✧ Grâce à mon parcours actuel (BTS SIO, OpenClassrooms, Stages..) je me sens prête à plonger dans la piscine dès la prochaine rentrée. </p>
+            </div>
+            <div class="ecole42-aside">
+              <div class="fact-box">
+                <p class="fact-label">Fondation</p>
+                <p class="fact-value">2013</p>
+              </div>
+              <div class="fact-box">
+                <p class="fact-label">Durée du cursus</p>
+                <p class="fact-value">3 à 5 ans</p>
+              </div>
+              <div class="fact-box">
+                <p class="fact-label">Frais de scolarité</p>
+                <p class="fact-value">Gratuit</p>
+              </div>
+              <div class="fact-box">
+                <p class="fact-label">Pédagogie</p>
+                <p class="fact-value">Peer-to-peer</p>
+              </div>
+               <img src="images/piscine42.png" alt="Date Piscine 42" title="Cliquer pour agrandir">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Anne-Charlotte Rivalland — Portfolio BTS SIO (SLAM)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

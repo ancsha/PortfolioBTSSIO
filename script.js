@@ -75,7 +75,6 @@ function toggleExpand(id) {
   const isOpen = el.classList.contains('open');
   el.classList.toggle('open');
 
-  // Mise à jour du bouton
   const btn = el.previousElementSibling;
   if (btn && btn.classList.contains('expand-btn')) {
     btn.textContent = isOpen
@@ -121,9 +120,35 @@ function openLightbox(img) {
   lightbox.style.display = 'flex';
 }
 
-// Rend toutes les images cliquables automatiquement
 document.addEventListener('click', (e) => {
   if (e.target.tagName === 'IMG' && e.target.id !== 'lightbox-img') {
     openLightbox(e.target);
   }
+});
+
+window.addEventListener("load", () => {
+    const hash = window.location.hash.replace("#", "");
+
+    if (hash) {
+
+        document.querySelectorAll(".page").forEach(section => {
+            section.classList.remove("active");
+        });
+
+        document.querySelectorAll(".nav-btn").forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        const targetSection = document.getElementById(hash);
+
+        if (targetSection) {
+            targetSection.classList.add("active");
+        }
+
+        const targetBtn = document.querySelector(`[data-target="${hash}"]`);
+
+        if (targetBtn) {
+            targetBtn.classList.add("active");
+        }
+    }
 });

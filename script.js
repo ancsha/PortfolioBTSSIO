@@ -126,6 +126,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
+
 window.addEventListener("load", () => {
     const hash = window.location.hash.replace("#", "");
 

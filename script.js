@@ -127,3 +127,30 @@ document.addEventListener('click', (e) => {
     openLightbox(e.target);
   }
 });
+
+window.addEventListener("load", () => {
+    const hash = window.location.hash.replace("#", "");
+
+    if (hash) {
+
+        document.querySelectorAll(".page").forEach(section => {
+            section.classList.remove("active");
+        });
+
+        document.querySelectorAll(".nav-btn").forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        const targetSection = document.getElementById(hash);
+
+        if (targetSection) {
+            targetSection.classList.add("active");
+        }
+
+        const targetBtn = document.querySelector(`[data-target="${hash}"]`);
+
+        if (targetBtn) {
+            targetBtn.classList.add("active");
+        }
+    }
+});
